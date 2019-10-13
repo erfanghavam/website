@@ -31,7 +31,6 @@
         delay: 10,
         time: 1000
     });
-*/
 
     $(".skill_main").each(function() {
         $(this).waypoint(function() {
@@ -45,7 +44,7 @@
 
         });
     });
-
+*/
 
     /*----------------------------------------------------*/
     /*  MailChimp Slider
