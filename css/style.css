@@ -1,16 +1,6 @@
-/*----------------------------------------------------
-@File: Default Styles
-@Author: SPONDON IT
-
-This file contains the styling for the actual theme, this
-is the file you need to edit to change the look of the
-theme.
----------------------------------------------------- */
 /*=====================================================================
-@Template Name: Erfan-site 
 @Developed By: Erfan Ghavam
 Author E-mail: a.erfanghavam@gmail.com
-
 =====================================================================*/
 /*----------------------------------------------------*/
 /*font Variables*/
@@ -4714,6 +4704,13 @@ h6 {
     margin-bottom: 0px;
 }
 
+code {
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+}
+
 /**********************************/
 /*           Lightboxes           */
 /**********************************/
@@ -4822,15 +4819,48 @@ h6 {
     background-clip: border-box;
 }
 
+.btn-lightbox{
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 0px;
+    outline: none !important;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    border: double 2px transparent;
+    box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+}
+
+.btn-lightbox:hover{
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
+    border: 2px solid #854fee;
+    color: #222222;
+    box-shadow: none;
+    background-clip: border-box;
+}
+
+
+.btn-lightbox span {
+    padding: 0 20px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 250;
+    font-size: 14px;
+    line-height: 20px;
+}
+
 /* ========== Fade-move Animation For Lightbox - Magnific Popup ========== */
 
-.my-mfp-slide-bottom .zoom-anim-dialog {
+/*.my-mfp-slide-bottom .zoom-anim-dialog {
     opacity: 0;
     transition: all 0.2s ease-out;
     -webkit-transform: translateY(-1.25rem) perspective(37.5rem) rotateX(10deg);
     -ms-transform: translateY(-1.25rem) perspective(37.5rem) rotateX(10deg);
     transform: translateY(-1.25rem) perspective(37.5rem) rotateX(10deg);
-}
+}*/
 
 /* animate in */
 .my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
