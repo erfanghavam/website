@@ -104,9 +104,12 @@
                         <aside class="single_sidebar_widget author_widget">
                             <img class="author_img rounded-circle" src="../../img/person/me1.png" alt="">
                             <h4>Erfan Ghavam</h4>
+                            <p>Linux System Administrator</p>
+                            <p>&</p>
                             <p>Network Engineer</p>
                             <div class="social_icon">
                                 <a class="popup-with-move-anim" href="#donate"><i class="far fa-gem"></i></a>
+                                <a href="http://twitter.com/frnimh/" target="_blank"><i class="fab fa-twitter"></i></a>
                                 <a href="http://t.me/frnimh/" target="_blank"><i class="fab fa-telegram-plane"></i></a>
                                 <a href="https://linkedin.com/in/frnimh/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="mailto:erfan@frnimh.ir" target="_blank"><i class="fas fa-at"></i></a>
@@ -124,42 +127,114 @@
             </div>
         </div>
     </section>
-    <!--==Donate==-->
+    <!--== Donate==-->
     <div id="donate" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="row">
             <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-6">
+            <div class="col-lg-10">
                 <h3>Donate</h3>
                 <hr></br>
-                <p>Click to Open Link</p>
                 <div class="contact_info">
                     <div class="info_item">
                         <i class="fas fa-credit-card"></i>
                         <h6><a href="https://idpay.ir/frnimh" target="_blank">IRR Cash</a></h6>
-                        <p>idpay.ir/frnimh</p>
+                        <div class="d-flex">
+                            <a class="btn-lightbox" href="https://idpay.ir/frnimh" target="_blank"><span>Open</span></a>
+                            <a class="btn-lightbox popup-with-move-anim" href="#irrqr" style="margin-left: 5px;"><span>QR</span></a>
+                        </div>
+                        </br>
                     </div>
                 </div>
                 <div class="contact_info">
                     <div class="info_item">
                         <i class="fab fa-paypal"></i>
                         <h6><a href="https://paypal.com/erfanghavam" target="_blank">PayPal</a></h6>
-                        <p>paypal.com/erfanghavam</p>
+                        <div class="d-flex">
+                            <a class="btn-lightbox" href="https://paypal.com/erfanghavam" target="_blank"><span>Open</span></a>
+                            <a class="btn-lightbox popup-with-move-anim" href="#paypalqr" style="margin-left: 5px;"><span>QR</span></a>
+                        </div>
+                        </br>
                     </div>
                 </div>
                 <div class="contact_info">
                     <div class="info_item">
                         <i class="fab fa-btc"></i>
                         <h6><a>BitCoin</a></h6>
-                        <p>1GnYX2QwiBnobDWmfPqrT6dkMnXoaJa2Ya</p>
+                        <div class="br"></div>
+                        <div class="form-group" style="margin-bottom: 5px;">
+                            <input class="form-control" type="text" value="1GnYX2QwiBnobDWmfPqrT6dkMnXoaJa2Ya" id="btcin" readonly="">
+                        </div>
+                        <div class="d-flex">
+                            <button class="btn-lightbox" onclick="btnBTC()"><span>Copy</span></button>
+                            <a class="btn-lightbox popup-with-move-anim" href="#btcqr" style="margin-left: 5px;"><span>QR</span></a>
+                        </div>
+                        </br>
                     </div>
                 </div>
                 <div class="contact_info">
                     <div class="info_item">
                         <i class="fab fa-ethereum"></i>
                         <h6><a>Ethereum</a></h6>
-                        <p>0x07e075031f81CfAAb90dEcf210046C05fc5D5A48</p>
+                        <div class="br"></div>
+                        <div class="form-group" style="margin-bottom: 5px;">
+                            <input class="form-control" type="text" value="0x07e075031f81CfAAb90dEcf210046C05fc5D5A48" id="ethin" readonly="">
+                        </div>
+                        <div class="d-flex">
+                            <button class="btn-lightbox" onclick="btnETH()"><span>Copy</span></button>
+                            <a class="btn-lightbox popup-with-move-anim" href="#ethqr" style="margin-left: 5px;"><span>QR</span></a>
+                        </div>
+                        </br></br>
                     </div>
                 </div>
+                <a class="btn-outline-reg mfp-close as-button" href="#footer">BACK</a>
+            </div>
+        </div>
+    </div>
+    <!--==QR==-->
+    <!--IDpay-->
+    <div id="irrqr" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <h3>IRR</h3>
+                <hr>
+                <img src="../../../img/qr/idpay.png">
+                <a class="btn-outline-reg mfp-close as-button" href="#footer">BACK</a>
+            </div>
+        </div>
+    </div>
+    <!--PayPal-->
+    <div id="paypalqr" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <h3>PayPal</h3>
+                <hr>
+                <img src="../../../img/qr/paypal.png">
+                <a class="btn-outline-reg mfp-close as-button" href="#footer">BACK</a>
+            </div>
+        </div>
+    </div>
+    <!--BTC-->
+    <div id="btcqr" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <h3>Bitcoin</h3>
+                <hr>
+                <img src="../../../img/qr/btc.png">
+                <a class="btn-outline-reg mfp-close as-button" href="#footer">BACK</a>
+            </div>
+        </div>
+    </div>
+    <!--ETH-->
+    <div id="ethqr" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <h3>Ethereum</h3>
+                <hr>
+                <img src="../../../img/qr/eth.png">
                 <a class="btn-outline-reg mfp-close as-button" href="#footer">BACK</a>
             </div>
         </div>
@@ -174,7 +249,6 @@
                             <a href="https://frnimh.ir">
                                 <img src="../../../img/logo.png" alt="">
                             </a>
-                            <h4>Connect to Me</h4>
                         </div>
                         <div class="footer_social">
                             <a class="popup-with-move-anim" href="#donate"><i class="far fa-gem"></i></a>
